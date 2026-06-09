@@ -385,11 +385,16 @@ Interchained ecosystem tools are experimental software and infrastructure. Nothi
 
 ## License
 
-License terms may vary depending on the final release strategy for this repository.
+This repository is licensed under the **GNU General Public License v3.0 or later**.
 
-If this repository is released as open source, include the appropriate license file in the project root.
+```text
+SPDX-License-Identifier: GPL-3.0-or-later
+```
 
-Recommended placeholder:
+You may use, study, share, and modify this software, provided that distributed modifications or derivative works remain licensed under the GNU GPL v3.0 or later.
+
+See the [`LICENSE`](./LICENSE) file for details.
+
 
 ```text
 Copyright (C) 2026 Interchained LLC.
