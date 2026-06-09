@@ -99,14 +99,14 @@
   const term = document.getElementById("term");
   if (term) {
     const lines = [
-      { t: "$ git clone https://github.com/interchained/interchained", c: "p" },
-      { t: "Cloning interchained … done.", c: "c" },
-      { t: "$ ./src/interchainedd -addnode=seed.interchained.org:17101", c: "p" },
+      { t: "$ git clone https://github.com/interchained/node", c: "p" },
+      { t: "Cloning interchained-node … done.", c: "c" },
+      { t: "$ ./itc-node --start --network main", c: "p" },
       { t: "[ok] proof-of-work consensus engaged", c: "gr" },
       { t: "[ok] difficulty adjustment online (DAA)", c: "gr" },
       { t: "[itc] block reward applied via subsidy curve", c: "g" },
       { t: "[net] vision dashboard syncing blocks…", c: "o" },
-      { t: "$ verify -build-in-public", c: "p" },
+      { t: "$ verify --in-public", c: "p" },
       { t: "the chain is live ▮", c: "g" },
     ];
     const render = (count, partial) => {
