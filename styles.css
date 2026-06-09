@@ -268,6 +268,7 @@ h1, h2, h3 { font-weight: 700; line-height: 1.02; letter-spacing: -0.02em; }
 .orbit-ring {
   position: absolute; border-radius: 50%;
   border: 1px solid rgba(170,180,200,0.12);
+  pointer-events: none;
 }
 .orbit-ring.r1 { inset: 20%; }
 .orbit-ring.r2 { inset: 10%; }
@@ -282,7 +283,7 @@ h1, h2, h3 { font-weight: 700; line-height: 1.02; letter-spacing: -0.02em; }
 }
 .coin-core img { width: 100%; filter: drop-shadow(0 0 50px rgba(245,196,105,0.5)); animation: coinfloat 7s ease-in-out infinite; }
 .coin-core::before {
-  content: ""; position: absolute; inset: -28%;
+  content: ""; position: absolute; inset: -28%; pointer-events: none;
   background: radial-gradient(circle, rgba(245,196,105,0.30), transparent 62%);
   filter: blur(8px); animation: breathe 5s ease-in-out infinite;
 }
@@ -295,6 +296,7 @@ h1, h2, h3 { font-weight: 700; line-height: 1.02; letter-spacing: -0.02em; }
   animation-delay: var(--delay, 0s);
 }
 .orbiter.ccw { animation-name: orbit-ccw; }
+.orbiter.core-orbiter { z-index: 7; }
 .orbiter .arm { position: absolute; top: 0; left: 0; transform: translateY(calc(-1 * var(--r, 42cqmin))); }
 .orbiter .node {
   position: absolute;
